@@ -1,6 +1,6 @@
 // Ehkalu Moo
 //Javascript 
-//April 3, 2017
+//April 11, 2017
 //Assignment# 11
      
 
@@ -26,7 +26,7 @@ function addShoppinglist(item) {
   //v 3.0 edit value for MyItems.name
   MyItems.name=item;
   //v 3.0 edit value for MyItems.cost
- // MyItems.price=cost;
+  //MyItems.price=cost;
   //v 3.0 for loop through object propterties and 
   for (var x in MyItems){
     if (count===1){
@@ -191,7 +191,7 @@ TheList += TheRow;
 }
 if (arrayLength > 0)
 {
-  document.getElementById("MyCart").innerHTML = 'Shopping Cart <img src="https://cdn.pbrd.co/images/OC8rBdiTW.png" alt="W3Schools.com" style="width:30px;height:30px;">' + '<br><ul>' + TheList + '</ul>';
+  document.getElementById("MyCart").innerHTML = '<img src="https://cdn.pbrd.co/images/OC8rBdiTW.png" alt="W3Schools.com" style="width:30px;height:30px;">' + '<br><ul>' + TheList + '</ul>';
 }else{
   document.getElementById("MyCart").innerHTML = '';
 }
