@@ -30,12 +30,12 @@ function addShoppinglist(item,cost) {
   //v 3.0 for loop through object propterties and 
   for (var x in MyItems){
     if (count===1){
-      groc += "$";
+      groc += "";
     }
     //add to groc string from object array item
     groc += MyItems[x];
     if (count===0){
-      groc += " |  ";
+      groc += "";
     }
     //increment count by 1
    count++;
