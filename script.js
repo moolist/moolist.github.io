@@ -56,7 +56,7 @@ function clearFocus()
 //v 2.1: http://stackoverflow.com/questions/4135818/how-to-clear-a-textbox-using-javascript
   document.getElementById("item").value = "";
 //v 3.0 clear cost field
-   document.getElementById("cost").value = "";
+   //document.getElementById("cost").value = "";
 
 //v 2.1: set focus on inputbox after text is cleared
 //v 2.1: http://stackoverflow.com/questions/17500704/javascript-set-focus-to-html-form-element
