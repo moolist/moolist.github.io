@@ -67,11 +67,7 @@ label {
 }
 
 
-input[type=button] {
-    vertical-align:middle;
-    margin: 40 5px;
-    background-color:  #9E6100;
-}
+
 
 ul {
     list-style-type:none;
@@ -108,8 +104,10 @@ input[type=text], select {
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
-    
+     width: 150px;
+    height: 30px;
 }
+
 
 input[type=submit] {
   
@@ -117,8 +115,11 @@ input[type=submit] {
     color: white;
     border: none;
     border-radius: 3px;
-    cursor: pointer; 
+    cursor: pointer;
+   margin: 15px;
     padding: 5px 10px ;
+   width: 70px;
+    height: 30px;
     
    
 }
