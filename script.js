@@ -18,7 +18,7 @@ var shoppinglist = [];
 
 //v 2.1 Update function addShoppinglist
 //v 3.0 Update function addShoppinglist by adding objects
-function addShoppinglist(item,cost) {
+function addShoppinglist(item) {
   //v 3.0 declare variable for groc string
   var groc="";
   //v 3.0 v 3.0 declare variable for loop count
@@ -26,7 +26,7 @@ function addShoppinglist(item,cost) {
   //v 3.0 edit value for MyItems.name
   MyItems.name=item;
   //v 3.0 edit value for MyItems.cost
-  MyItems.price=cost;
+ // MyItems.price=cost;
   //v 3.0 for loop through object propterties and 
   for (var x in MyItems){
     if (count===1){
