@@ -20,33 +20,22 @@ var shoppinglist = [];
 //v 3.0 Update function addShoppinglist by adding objects
 function addShoppinglist(item) {
   //v 3.0 declare variable for groc string
-  var groc="";
-  //v 3.0 v 3.0 declare variable for loop count
-  var count=0;
-  //v 3.0 edit value for MyItems.name
-  MyItems.name=item;
-  //v 3.0 edit value for MyItems.cost
-  //MyItems.price=cost;
-  //v 3.0 for loop through object propterties and 
-  for (var x in MyItems){
-    if (count===1){
-      groc += "";
-    }
-    //add to groc string from object array item
-    groc += MyItems[x];
-    if (count===0){
-      groc += "";
-    }
-    //increment count by 1
-   count++;
-  }
   //push to shoppinglist
-  shoppinglist.push(groc);
+  if (item != "")
+  {
+  shoppinglist.push(item);
   //display shoppinglist
   displayShoppinglists();
-//v 2.1: call function 'clearFocus'
-  
+//v3.1 display displayShoppingCart() 
+  displayShoppingCart(); 
   clearFocus();
+  //v 4.0 save cookie
+  savecookie();
+  }else
+  {
+  alert("Item Description is Required");
+  clearFocus();
+  }
 }
 
 //v 2.1 add function 'clearFocus'
