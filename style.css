@@ -44,7 +44,8 @@ body {
   box-shadow: inset 0 0 0px rgba(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, .2);
   outline-color: rgba(255, 255, 255, 0);
   outline-offset: 15px;
-  text-shadow: 1px 1px 2px #427388; 
+  text-shadow: 1px 1px 1px #427388; 
+    font-size: 60%
 }
 
 #wrapper {
@@ -52,7 +53,7 @@ body {
     margin:20px auto;
     padding:20px;
     border-radius: 7px 7px 0 0;
-    box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.3), 0 2px 2px rgba(0, 0, 0, .3);
+    box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.3), 0 1px 2px rgba(255, 255, 255, 0.3);
     border: 1px solid #6f212f;
 }
 
