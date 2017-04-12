@@ -162,36 +162,23 @@ div {
    
 }
 
-
-
-@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
-
+@import url(http://fonts.googleapis.com/css?family=Raleway);
 body {
-    background-color: #111111;
-    overflow: hidden;
+  background-color: #eee;
+  min-height: 100%;
+  color: #fff;
+  background-image: 
+  background-size: cover;
+  background-position: center;
+  font-family: Raleway, sans-serif;
 }
 
-#logo {
-   position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    top: 0;
-    margin: auto;
-    max-width: 50%;
-    max-height:100%;
-    overflow:auto;
-}
-
-.binary {
-    position: absolute;
-    top: 0;
-    left: 300px;
-    z-index: -1;
-    font-family: 'Source Sans Pro', sans-serif;
-    -webkit-animation-duration: 800ms;
-    writing-mode: vertical-rl;
-    text-orientation: sideways;
-    color: white;
-    text-shadow: 0 0 10px #91EDFF;
+#title {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  font-size: 20px;
+  letter-spacing: 0.1em;
+  z-index: 100;
+  color: #fff;
 }
