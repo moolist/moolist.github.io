@@ -82,7 +82,7 @@ ul {
      color: #9E6100;
 }
 li {
-    background:  #9E6100
+    background:  rgb(255, 255, 204)
 
 ;
     margin:5px 0px;
@@ -91,7 +91,7 @@ li {
    
 }
 li:nth-child(odd) {
-    background: #9E6100
+    background: rgb(255, 255, 204)
 
 ;
 }
