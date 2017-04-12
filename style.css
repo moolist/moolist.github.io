@@ -79,10 +79,10 @@ ul {
     margin:10px 0px;
     padding:0px;
     clear:both;
-     color: #9E6100;
+     color: #ffffcc;
 }
 li {
-    background:  rgb(255, 255, 204)
+    background:  #ffffcc
 
 ;
     margin:5px 0px;
@@ -91,7 +91,7 @@ li {
    
 }
 li:nth-child(odd) {
-    background: rgb(255, 255, 204)
+    background: #ffffcc
 
 ;
 }
