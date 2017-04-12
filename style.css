@@ -163,22 +163,4 @@ div {
 }
 
 @import url(http://fonts.googleapis.com/css?family=Raleway);
-body {
-  background-color: #eee;
-  min-height: 100%;
-  color: #fff;
-  background-image: 
-  background-size: cover;
-  background-position: center;
-  font-family: Raleway, sans-serif;
-}
 
-#title {
-  position: fixed;
-  top: 10px;
-  left: 10px;
-  font-size: 20px;
-  letter-spacing: 0.1em;
-  z-index: 100;
-  color: #fff;
-}
