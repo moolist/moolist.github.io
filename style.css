@@ -67,7 +67,7 @@ label {
      float:right;
     padding-right: 15px;
     text-indent: 5px;
-    color: #e6e600;
+    color: #333300;
 }
 
 
@@ -79,7 +79,7 @@ ul {
     margin:10px 0px;
     padding:0px;
     clear:both;
-     color: #ffffcc;
+     color: #333300;
 }
 li {
     background:  #ffffcc
