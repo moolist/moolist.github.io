@@ -91,7 +91,7 @@ li {
    
 }
 li:nth-child(odd) {
-    background: #F2F5C2
+    background: rgb(42, 102, 255)
 
 ;
 }
