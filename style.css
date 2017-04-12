@@ -2,7 +2,7 @@
 
 
 body {
-    background-color: rgb(102, 102, 102);
+    background-color: #ffff99;
 }
 
 .button1 {
@@ -67,7 +67,7 @@ label {
      float:right;
     padding-right: 15px;
     text-indent: 5px;
-    color: #ffffe6;
+    color: #e6e600;
 }
 
 
