@@ -137,7 +137,10 @@ input[type=submit]:hover {
   text-shadow: 1px 1px 2px #427388; 
     filter: green(100%);
     transition: 0.2s;
-    @-webkit-keyframes background {
+    
+}
+
+@-webkit-keyframes background {
   0% { background-color: #59fff9; }
   25% { background-color: #59ffc7; }
   50% { background-color: #59ffae; }
@@ -152,9 +155,6 @@ input[type=submit]:hover {
   75% { background-color:  #59ff88; }  
   100% { background-color: #0ef750; }
 }
-}
-
-
 div {
     border-radius: 5px;
     background-color: #E6EBB8;
