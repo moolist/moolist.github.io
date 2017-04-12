@@ -46,25 +46,10 @@ body {
   outline-offset: 15px;
   text-shadow: 1px 1px 1px #427388; 
     font-size: 55%
-    filter: green(280%);
-    transition: 0.2s;
+    
 }
 
-@-webkit-keyframes background {
-  0% { background-color: #59fff9; }
-  25% { background-color: #59ffc7; }
-  50% { background-color: #59ffae; }
-  75% { background-color: #59ff88; }  
-  100% { background-color: #0ef750; }
-}
 
-@keyframes background{
-  0% { background-color: #59fff9; }
-  25% { background-color: #59ffc7; }
-  50% { background-color: #59ffae; }
-  75% { background-color:  #59ff88; }  
-  100% { background-color: #0ef750; }
-}
 
 #wrapper {
     width:380px;
@@ -150,6 +135,23 @@ input[type=submit]:hover {
   outline-color: rgba(255, 255, 255, 0);
   outline-offset: 15px;
   text-shadow: 1px 1px 2px #427388; 
+    filter: green(280%);
+    transition: 0.2s;
+    @-webkit-keyframes background {
+  0% { background-color: #59fff9; }
+  25% { background-color: #59ffc7; }
+  50% { background-color: #59ffae; }
+  75% { background-color: #59ff88; }  
+  100% { background-color: #0ef750; }
+}
+
+@keyframes background{
+  0% { background-color: #59fff9; }
+  25% { background-color: #59ffc7; }
+  50% { background-color: #59ffae; }
+  75% { background-color:  #59ff88; }  
+  100% { background-color: #0ef750; }
+}
 }
 
 
