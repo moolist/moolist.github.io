@@ -67,7 +67,7 @@ label {
      float:right;
     padding-right: 15px;
     text-indent: 5px;
-    color: #b3b300;
+    color: #ffcc00;
 }
 
 
@@ -82,7 +82,7 @@ ul {
      color: #333300;
 }
 li {
-    background:  #ffffcc
+    background:  #b3b300
 
 ;
     margin:5px 0px;
@@ -91,9 +91,7 @@ li {
    
 }
 li:nth-child(odd) {
-    background: #ffffcc
-
-;
+    background: #ffffcc;
 }
 li a {
     font-size:small;
