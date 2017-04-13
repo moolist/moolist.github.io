@@ -3,7 +3,7 @@
 //April 11, 2017
 //Assignment# 11
 
-
+window.alert("Welcome to Shopping List app");
 
 
 //v 3.0 Create Objects for Shoppinglist
