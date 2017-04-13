@@ -21,8 +21,9 @@
   <div id="wrapper">
   <div align="center">
     <h2><u>Shopping List</u> </h2><br>
-
-       <input type="text" id="item" name="item" placeholder="Item Name.." />
+        
+       <input type="text" id="item" name="item" onkeydown = "if (event.keyCode == 13)
+                        document.getElementById('submit').click()" maxlength="18" placeholder="enter item" />
       <input class="button" id="submit"  name="submit" type="submit" value="Add to Cart"  onclick="addShoppinglist(item.value)" /><br><br>
 
 
