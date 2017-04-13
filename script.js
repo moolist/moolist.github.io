@@ -274,4 +274,10 @@ function remove_unwanted(str) {
 }  
 
 
-
+document.getElementById("input")
+    .addEventListener("keyup", function(event) {
+    event.preventDefault();
+    if (event.keyCode == 13) {
+        document.getElementById("button").click();
+    }
+});
