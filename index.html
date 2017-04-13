@@ -22,8 +22,8 @@
   <div align="center">
     <h2><u>Shopping List</u> </h2><br>
 
-       <input type="text" id="item" name="item" onkeydown = "if (event.keyCode == 13)
-       document.getElementById('submit').click()" maxlength="18"placeholder="Item Name.."/>
+       <label>Item</label><input type="text" id="item" name="item" onkeydown = "if (event.keyCode == 13)
+                        document.getElementById('btnSubmit').click()" maxlength="18" placeholder="enter item" />
       <input class="button" id="submit"  name="submit" type="submit" value="Add to Cart"  onclick="addShoppinglist(item.value)" /><br><br>
 
 
