@@ -18,7 +18,7 @@ var shoppinglist = [];
 
 //v 2.1 Update function addShoppinglist
 //v 3.0 Update function addShoppinglist by adding objects
-function addShoppinglist(item,cost) {
+function addShoppinglist(item) {
   //v 3.0 declare variable for groc string
   var groc="";
   //v 3.0 v 3.0 declare variable for loop count
@@ -26,7 +26,7 @@ function addShoppinglist(item,cost) {
   //v 3.0 edit value for MyItems.name
   MyItems.name=item;
   //v 3.0 edit value for MyItems.cost
-  MyItems.price=cost;
+  //MyItems.price=cost;
   //v 3.0 for loop through object propterties and 
   for (var x in MyItems){
     if (count===1){
@@ -56,7 +56,7 @@ function clearFocus()
 //v 2.1: http://stackoverflow.com/questions/4135818/how-to-clear-a-textbox-using-javascript
   document.getElementById("item").value = "";
 //v 3.0 clear cost field
-   document.getElementById("cost").value = "";
+   //document.getElementById("cost").value = "";
 
 //v 2.1: set focus on inputbox after text is cleared
 //v 2.1: http://stackoverflow.com/questions/17500704/javascript-set-focus-to-html-form-element
