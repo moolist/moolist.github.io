@@ -1,10 +1,11 @@
 // Ehkalu Moo
 //Javascript 
-//April 11, 2017
+//April 3, 2017
 //Assignment# 11
+     
 
-window.alert("Welcome to Shopping List app");
 
+window.alert("Welcome to Shopping List App")
 
 //v 3.0 Create Objects for Shoppinglist
 var MyItems = {
@@ -17,24 +18,35 @@ var shoppinglist = [];
 
 //v 2.1 Update function addShoppinglist
 //v 3.0 Update function addShoppinglist by adding objects
-function addShoppinglist(item) {
+function addShoppinglist(item,cost) {
   //v 3.0 declare variable for groc string
+  var groc="";
+  //v 3.0 v 3.0 declare variable for loop count
+  var count=0;
+  //v 3.0 edit value for MyItems.name
+  MyItems.name=item;
+  //v 3.0 edit value for MyItems.cost
+  MyItems.price=cost;
+  //v 3.0 for loop through object propterties and 
+  for (var x in MyItems){
+    if (count===1){
+      groc += "$";
+    }
+    //add to groc string from object array item
+    groc += MyItems[x];
+    if (count===0){
+      groc += ", ";
+    }
+    //increment count by 1
+   count++;
+  }
   //push to shoppinglist
-  if (item != "")
-  {
-  shoppinglist.push(item);
+  shoppinglist.push(groc);
   //display shoppinglist
   displayShoppinglists();
-//v3.1 display displayShoppingCart() 
-  displayShoppingCart(); 
+//v 2.1: call function 'clearFocus'
+  
   clearFocus();
-  //v 4.0 save cookie
-  savecookie();
-  }else
-  {
-  alert("Item Description is Required");
-  clearFocus();
-  }
 }
 
 //v 2.1 add function 'clearFocus'
@@ -44,7 +56,7 @@ function clearFocus()
 //v 2.1: http://stackoverflow.com/questions/4135818/how-to-clear-a-textbox-using-javascript
   document.getElementById("item").value = "";
 //v 3.0 clear cost field
-   //document.getElementById("cost").value = "";
+   document.getElementById("cost").value = "";
 
 //v 2.1: set focus on inputbox after text is cleared
 //v 2.1: http://stackoverflow.com/questions/17500704/javascript-set-focus-to-html-form-element
@@ -54,7 +66,6 @@ function clearFocus()
 //v 2.1: update function displayShoppinglists() to display shoppinglists
 //v 3.0: update function displayShoppinglists() to display shoppinglists & add remove button
 function displayShoppinglists() {
-
 //v 2.1: add and initialize variable 'TheList' with empty string 
 var TheList = "";
 //v 2.1: add and intitialize variable 'arrayLength' with shoppinglist.length
@@ -159,11 +170,10 @@ TheList += TheRow;
 //v3.1 add Title
 if (arrayLength > 0)
 {
-
-  document.getElementById("MyCart").innerHTML = '<ul>' + TheList + '</ul>';
-}else{
-
-  document.getElementById("MyCart").innerHTML = '';
+  document.getElementById("MyList").innerHTML = '<ul>' + TheList + '</ul>';
+}else
+{
+  document.getElementById("MyList").innerHTML = '';
 }
 }
 
@@ -181,7 +191,7 @@ TheList += TheRow;
 }
 if (arrayLength > 0)
 {
-  document.getElementById("MyCart").innerHTML = '<img src="https://cdn.pbrd.co/images/3RE8294e9.png" alt="https://cdn.pbrd.co/images/3RE8294e9.png" style="width:30px;height:30px;">' + '<br><ul>' + TheList + '</ul>';
+  document.getElementById("MyCart").innerHTML = 'Shopping Cart <img src="https://cdn.pbrd.co/images/3RE8294e9.png" alt="https://cdn.pbrd.co/images/3RE8294e9.png" style="width:30px;height:30px;">' + '<br><ul>' + TheList + '</ul>';
 }else{
   document.getElementById("MyCart").innerHTML = '';
 }
@@ -202,84 +212,4 @@ function deleteShoppingCart(position) {
   displayShoppingCart() 
 }
 
-function savecookie()
-{
-  delete_cookie('konkollist');
-   var date = new Date();
-   //keeps for a year
-    date.setTime(date.getTime() + Number(365) * 3600 * 1000);
-   document.cookie = 'konkollist' + "=" + escape(shoppinglist.join(',')) + "; path=/;expires = " + date.toGMTString();
-}
 
-function readCookie(name) {
-    var nameEQ = name + "=";
-    var ca = document.cookie.split(';');
-    for(var i=0;i < ca.length;i++) {
-        var c = ca[i];
-        while (c.charAt(0)==' ') c = c.substring(1,c.length);
-        if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
-    }
-    return null;
-}
-
-
-function delete_cookie(name) {
-  document.cookie = name + '=; expires=Thu, 01 Jan 1970 00:00:01 GMT;';
-}
-
-
-function savecookie()
-{
-  delete_cookie('moo'); //cookie name
-   var date = new Date();
-   //keeps for a year
-    date.setTime(date.getTime() + Number(365) * 3600 * 1000);
-  //replace konkol with YOUR last name
-   document.cookie = 'moo' + "=" + escape(shoppinglist.join(',')) + "; path=/;expires = " + date.toGMTString();
-}
-//multiple places in .JS. 
-// Put call to savecookie(); AFTER displayShoppingCart();
-displayShoppingCart();
-  //v 4.0 save cookie
-  savecookie();
-
-window.onload = function() {
-  populateshoppinglistonload();
-   displayShoppinglists();
-};
-
-function populateshoppinglistonload()
-{
-  shoppinglist = [];
-  addtocart = [];
-  //load cookie into array
-  var y = readCookie('moo'); //cookie name
-  //remove unwanted chars and format
-  y = remove_unwanted(y); 
-  //spit array by comma %2C
-  y = y.split('%2C');
-  if (y) {
-    shoppinglist = y;
-   }
-}
-
-function remove_unwanted(str) {  
-    
-  if ((str===null) || (str===''))  
-       return false;  
- else  
-   str = str.toString();  
-   str = str.replace(/%20/g, "");
-   str = str.replace(/%24/g, "$"); 
-   str = str.replace(/%7C/g, " | ");
-  return str.replace(/[^\x20-\x7E]/g, '');  
-}  
-
-
-document.getElementById("input")
-    .addEventListener("keyup", function(event) {
-    event.preventDefault();
-    if (event.keyCode == 13) {
-        document.getElementById("button").click();
-    }
-});
