@@ -253,19 +253,19 @@ div {
   opacity: 0.6;
   z-index: -1;
   -webkit-animation-name: backgroundAnimate;
-  -webkit-animation-duration: 100s;
+  -webkit-animation-duration: 50s;
   -webkit-animation-timing-function: linear;
   -webkit-animation-iteration-count: infinite;
   -moz-animation-name: backgroundAnimate;
-  -moz-animation-duration: 100s;
+  -moz-animation-duration: 50s;
   -moz-animation-timing-function: linear;
   -moz-animation-iteration-count: infinite;
   -o-animation-name: backgroundAnimate;
-  -o-animation-duration: 100s;
+  -o-animation-duration: 50s;
   -o-animation-timing-function: linear;
   -o-animation-iteration-count: infinite;
   animation-name: backgroundAnimate;
-  animation-duration: 100s;
+  animation-duration: 50s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
