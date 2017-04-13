@@ -226,19 +226,19 @@ div {
   opacity: 0.4;
   z-index: -1;
   -webkit-animation-name: backgroundAnimate;
-  -webkit-animation-duration: 300s;
+  -webkit-animation-duration: 200s;
   -webkit-animation-timing-function: linear;
   -webkit-animation-iteration-count: infinite;
   -moz-animation-name: backgroundAnimate;
-  -moz-animation-duration: 3s;
+  -moz-animation-duration: 4s;
   -moz-animation-timing-function: linear;
   -moz-animation-iteration-count: infinite;
   -o-animation-name: backgroundAnimate;
-  -o-animation-duration: 300s;
+  -o-animation-duration: 200s;
   -o-animation-timing-function: linear;
   -o-animation-iteration-count: infinite;
   animation-name: backgroundAnimate;
-  animation-duration:300s;
+  animation-duration: 200s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
@@ -253,19 +253,19 @@ div {
   opacity: 0.6;
   z-index: -1;
   -webkit-animation-name: backgroundAnimate;
-  -webkit-animation-duration: 50s;
+  -webkit-animation-duration: 90s;
   -webkit-animation-timing-function: linear;
   -webkit-animation-iteration-count: infinite;
   -moz-animation-name: backgroundAnimate;
-  -moz-animation-duration: 50s;
+  -moz-animation-duration: 90s;
   -moz-animation-timing-function: linear;
   -moz-animation-iteration-count: infinite;
   -o-animation-name: backgroundAnimate;
-  -o-animation-duration: 50s;
+  -o-animation-duration: 90s;
   -o-animation-timing-function: linear;
   -o-animation-iteration-count: infinite;
   animation-name: backgroundAnimate;
-  animation-duration: 50s;
+  animation-duration: 90s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
