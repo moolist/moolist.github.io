@@ -82,7 +82,7 @@ ul {
      color: #333300;
 }
 li {
-    background:  #b3b300
+    background:  #666600
 
 ;
     margin:5px 0px;
@@ -91,7 +91,7 @@ li {
    
 }
 li:nth-child(odd) {
-    background:  #b3b300;
+    background:  #666600;
 }
 li a {
     font-size:small;
@@ -155,7 +155,7 @@ input[type=submit]:hover {
 }
 div {
     border-radius: 5px;
-    background-color:  #808000;
+    background-color: #4d4d00;
     padding: 20px;
    
 }
