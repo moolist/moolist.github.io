@@ -67,7 +67,7 @@ label {
      float:right;
     padding-right: 15px;
     text-indent: 5px;
-    color: #ffcc00;
+    color: #e6e600;
 }
 
 
@@ -155,7 +155,7 @@ input[type=submit]:hover {
 }
 div {
     border-radius: 5px;
-    background-color: #4d4d00;
+    background-color:  #b3b300;
     padding: 20px;
    
 }
