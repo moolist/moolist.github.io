@@ -54,6 +54,7 @@ function clearFocus()
 //v 2.1: update function displayShoppinglists() to display shoppinglists
 //v 3.0: update function displayShoppinglists() to display shoppinglists & add remove button
 function displayShoppinglists() {
+  document.getElementById("MyList").innerHTML = '';
 //v 2.1: add and initialize variable 'TheList' with empty string 
 var TheList = "";
 //v 2.1: add and intitialize variable 'arrayLength' with shoppinglist.length
