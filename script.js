@@ -7,6 +7,34 @@
 
 window.alert("Welcome to Shopping List App")
 
+function addShoppinglist(item) {
+  //v 3.0 declare variable for groc string
+  //push to shoppinglist
+  if (item != "")
+  {
+  shoppinglist.push(item);
+  //display shoppinglist
+  displayShoppinglists();
+//v3.1 display displayShoppingCart() 
+  displayShoppingCart(); 
+  clearFocus();
+  //v 4.0 save cookie
+  savecookie();
+  }else
+  {
+  alert("Please enter your item name");
+  clearFocus();
+  }
+}
+
+function clearFocus()
+{
+  document.getElementById("item").value = "";
+ //  document.getElementById("cost").value = "";
+  document.getElementById("item").focus();
+}
+
+
 //v 3.0 Create Objects for Shoppinglist
 var MyItems = {
   name:"",
@@ -16,38 +44,6 @@ var MyItems = {
 //v 2.1: change shoppinglist array empty array
 var shoppinglist = [];
 
-//v 2.1 Update function addShoppinglist
-//v 3.0 Update function addShoppinglist by adding objects
-function addShoppinglist(item) {
-  //v 3.0 declare variable for groc string
-  var groc="";
-  //v 3.0 v 3.0 declare variable for loop count
-  var count=0;
-  //v 3.0 edit value for MyItems.name
-  MyItems.name=item;
-  //v 3.0 edit value for MyItems.cost
-  //MyItems.price=cost;
-  //v 3.0 for loop through object propterties and 
-  for (var x in MyItems){
-    if (count===1){
-      groc += "$";
-    }
-    //add to groc string from object array item
-    groc += MyItems[x];
-    if (count===0){
-      groc += ", ";
-    }
-    //increment count by 1
-   count++;
-  }
-  //push to shoppinglist
-  shoppinglist.push(groc);
-  //display shoppinglist
-  displayShoppinglists();
-//v 2.1: call function 'clearFocus'
-  
-  clearFocus();
-}
 
 //v 2.1 add function 'clearFocus'
 function clearFocus()
