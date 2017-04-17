@@ -181,7 +181,7 @@ var btndelete =  ' <input class="button1" name="delete" type="button" value="Rem
 var btnupdate =  ' <input class="button" name="edit" type="button" value="Edit Item" onclick="changeShoppingCart(' + i + ')" />';
 var arrays = addtocart[i];
 arrays = "'"+arrays+"'";
-var btnaddlist =  '<label><input name="add" type="checkbox" id="adds" value="Add to Shopping List" onclick="addbacktoshoppinglist('+arrays+',' + i + ')" checked="checked"/> &nbsp;Add</label>';
+var btnaddlist =  '<label><input name="add" type="checkbox" id="adds" value="Add to Shopping List" onchange="toggleCheckbox(this) onclick="addbacktoshoppinglist('+arrays+',' + i + ')" checked="checked"/> &nbsp;Add</label>';
 TheRow =  "<li>" + addtocart[i] + btndelete + ' ' +  ' ' + btnaddlist + '<br></li>';
 TheList += TheRow;
 }
@@ -192,7 +192,10 @@ if (arrayLength > 0)
   document.getElementById("MyCart").innerHTML = '';
 }
 }
-
+function toggleCheckbox(element)
+ {
+   element.checked = !element.checked;
+ }
 
 //v3.1
 function deleteShoppinglists(position) {
