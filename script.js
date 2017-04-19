@@ -91,49 +91,7 @@ function remove_unwanted(str) {
    str = str.replace(/%24/g, "$"); 
    str = str.replace(/%7C/g, " | ");
   return str.replace(/[^\x20-\x7E]/g, '');  
-}  
-
-
-//v 4.0 save cookie
-function savecookie()
-{
-  delete_cookie('moo');
-   var date = new Date();
-   //keeps for a year
-    date.setTime(date.getTime() + Number(365) * 3600 * 1000);
-   document.cookie = 'moo' + "=" + escape(shoppinglist.join(',')) + "; path=/;expires = " + date.toGMTString();
 }
-
-
-//v 4.0 delete cookie
-function delete_cookie(name) {
-  document.cookie = name + '=; expires=Thu, 01 Jan 1970 00:00:01 GMT;';
-}
-
-
-function populateshoppinglistonload()
-{
-  shoppinglist = [];
-  addtocart = [];
-  //load cookie into array
-  var y = readCookie('moo');
-  //remove unwanted chars and format
-  y = remove_unwanted(y); 
-  //spit array by comma %2C
-  
-   //v 4.1 get URL
-  var geturllistvalue = get("list");
-    if (geturllistvalue) {
-        geturllistvalue = remove_unwanted(geturllistvalue);
-      geturllistvalue = geturllistvalue.split(',');
-      shoppinglist = geturllistvalue;
-  }else if (y){
-       y = y.split('%2C');
-      shoppinglist = y;
-  }
-}
-
-
 
 
 //v 3.0 Create Objects for Shoppinglist
@@ -302,12 +260,12 @@ TheList += TheRow;
 if (arrayLength > 0)
 {
   document.getElementById("MyList").innerHTML = '<ul>' + TheList + '</ul>';
-
+ document.getElementById("sharebutton").innerHTML = btnsharelist;
 
 }else
 {
   document.getElementById("MyList").innerHTML = '';
-
+ document.getElementById("sharebutton").innerHTML = '';
 
 }
 }
