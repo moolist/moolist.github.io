@@ -13,6 +13,7 @@ window.alert ('Display My shopping list App')
 
 
 
+
 //v 3.0 Create Objects for Shoppinglist
 var MyItems = {
   name:"",
@@ -24,6 +25,25 @@ var shoppinglist = [];
 
 //v 2.1 Update function addShoppinglist
 //v 3.0 Update function addShoppinglist by adding objects
+function addShoppinglist(item) {
+  //v 3.0 declare variable for groc string
+  //push to shoppinglist
+  if (item != "")
+  {
+  shoppinglist.push(item);
+  //display shoppinglist
+  displayShoppinglists();
+//v3.1 display displayShoppingCart() 
+  displayShoppingCart(); 
+  clearFocus();
+  //v 4.0 save cookie
+  savecookie();
+  }else
+  {
+  alert("Item Description is Required");
+  clearFocus();
+  }
+}
 
 //v 2.1 add function 'clearFocus'
 function clearFocus()
@@ -121,7 +141,6 @@ function addbacktoshoppinglist(item,num) {
 
 //v 3.1 Update function addShoppinglist by adding objects
 function addtoshopcart(item, num) {
-
     deleteShoppinglists(num);
     addtocart.push(item);
   //display shoppinglist
@@ -130,34 +149,7 @@ function addtoshopcart(item, num) {
   displayShoppingCart() 
   //Clear
   clearFocus();
-}
-
-function addShoppinglist(item) {
-  //v 3.0 declare variable for groc string
-  //push to shoppinglist
-  if (item != "")
-  {
-
-  shoppinglist.push(item);
-  //display shoppinglist
-  displayShoppinglists();
-//v3.1 display displayShoppingCart() 
-  displayShoppingCart(); 
-  clearFocus();
-  //v 4.0 save cookie
-  savecookie();
-  }else
-  {
-  alert("Item Description Required: Please enter now :)");
-  clearFocus();
-  }
-}
-
-function clearFocus()
-{
-  document.getElementById("item").value = "";
- //  document.getElementById("cost").value = "";
-  document.getElementById("item").focus();
+  save cookie();
 }
 
 
