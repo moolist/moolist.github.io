@@ -85,6 +85,7 @@ ul {
     padding:0px;
     clear:both;
      color:  #ffffe6;
+    cursor: pointer;
 }
 li {
     background:  #666600
