@@ -69,6 +69,7 @@ label {
     
     text-indent: 5px;
     color:  #ffffe6;
+    cursor: pointer;
 }
 
 
@@ -85,7 +86,7 @@ ul {
     padding:0px;
     clear:both;
      color:  #ffffe6;
-    cursor: pointer;
+    
 }
 li {
     background:  #666600
