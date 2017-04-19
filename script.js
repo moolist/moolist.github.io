@@ -2,7 +2,7 @@
 //Javascript 
 //April 3, 2017
 //Assignment# 11
-window.alert ('Welcome shopping list App')
+window.alert ('Welcome My shopping list App')
 
 
 
@@ -121,7 +121,7 @@ function addbacktoshoppinglist(item,num) {
 
 //v 3.1 Update function addShoppinglist by adding objects
 function addtoshopcart(item, num) {
-     document.getElementById("sharelist").innerHTML = ' ';
+
     deleteShoppinglists(num);
     addtocart.push(item);
   //display shoppinglist
@@ -137,7 +137,7 @@ function addShoppinglist(item) {
   //push to shoppinglist
   if (item != "")
   {
-  document.getElementById("sharelist").innerHTML = ' ';
+
   shoppinglist.push(item);
   //display shoppinglist
   displayShoppinglists();
@@ -179,12 +179,12 @@ TheList += TheRow;
 if (arrayLength > 0)
 {
   document.getElementById("MyList").innerHTML = '<ul>' + TheList + '</ul>';
- document.getElementById("sharebutton").innerHTML = btnsharelist;
+
 
 }else
 {
   document.getElementById("MyList").innerHTML = '';
- document.getElementById("sharebutton").innerHTML = '';
+
 
 }
 }
@@ -212,7 +212,7 @@ if (arrayLength > 0)
 
 //v3.1
 function deleteShoppinglists(position) {
-  document.getElementById("sharelist").innerHTML = ' ';
+
   shoppinglist.splice(position, 1);
   displayShoppinglists();
   displayShoppingCart();
@@ -221,7 +221,7 @@ function deleteShoppinglists(position) {
 }
 //v3.1
 function deleteShoppingCart(position) {
-  document.getElementById("sharelist").innerHTML = ' ';
+
   addtocart.splice(position, 1);
   displayShoppinglists();
   displayShoppingCart();
