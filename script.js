@@ -2,7 +2,73 @@
 //Javascript 
 //April 3, 2017
 //Assignment# 11
+
+
 window.alert ('Display Back My shopping list App')
+
+function readCookie(name) {
+    var nameEQ = name + "=";
+    var ca = document.cookie.split(';');
+    for(var i=0;i < ca.length;i++) {
+        var c = ca[i];
+        while (c.charAt(0)==' ') c = c.substring(1,c.length);
+        if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+    }
+    return null;
+}
+
+
+function delete_cookie(name) {
+  document.cookie = name + '=; expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+}
+
+
+function savecookie()
+{
+  delete_cookie('Moo'); //cookie name
+   var date = new Date();
+   //keeps for a year
+    date.setTime(date.getTime() + Number(365) * 3600 * 1000);
+  //replace konkol with YOUR last name
+   document.cookie = 'Moo' + "=" + escape(shoppinglist.join(',')) + "; path=/;expires = " + date.toGMTString();
+}
+//multiple places in .JS. 
+// Put call to savecookie(); AFTER displayShoppingCart();
+displayShoppingCart();
+  //v 4.0 save cookie
+  savecookie();
+
+window.onload = function() {
+  populateshoppinglistonload();
+   displayShoppinglists();
+};
+
+function populateshoppinglistonload()
+{
+  shoppinglist = [];
+  addtocart = [];
+  //load cookie into array
+  var y = readCookie('moo'); //cookie name
+  //remove unwanted chars and format
+  y = remove_unwanted(y); 
+  //spit array by comma %2C
+  y = y.split('%2C');
+  if (y) {
+    shoppinglist = y;
+   }
+}
+
+function remove_unwanted(str) {  
+    
+  if ((str===null) || (str===''))  
+       return false;  
+ else  
+   str = str.toString();  
+   str = str.replace(/%20/g, "");
+   str = str.replace(/%24/g, "$"); 
+   str = str.replace(/%7C/g, " | ");
+  return str.replace(/[^\x20-\x7E]/g, '');  
+}  
 
 
 
