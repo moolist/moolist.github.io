@@ -2,7 +2,7 @@
 //Javascript 
 //April 3, 2017
 //Assignment# 11
-window.alert ('Welcome My shopping list App')
+window.alert ('Display My shopping list App')
 
 
 
@@ -164,7 +164,7 @@ function clearFocus()
 
 
 function displayShoppinglists() {
-    document.getElementById("MyList").innerHTML = '';
+
 var TheList = "";
 var arrayLength = shoppinglist.length;
 for (var i = 0; i < arrayLength; i++) {
