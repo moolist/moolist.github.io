@@ -2,61 +2,7 @@
 //Javascript 
 //April 3, 2017
 //Assignment# 11
-window.alert ('Welcome shopping list')
-function get(name){
-    var url = window.location.search;
-    var num = url.search(name);
-    var namel = name.length;
-    var frontlength = namel+num+1; //length of everything before the value
-    var front = url.substring(0, frontlength);
-    url = url.replace(front, "");
-    num = url.search("&");
-    if(num>=0) return url.substr(0,num);
-    if(num<0)  return url;
-}
-//v4.1 ShareList via bitly api
-function passlist()
-{
-   var getshorturl=0;
-   var login = "o_3iokgmm945";
-   var api_key = "R_f2f3c9387a374e3fc6bf4b1ec2c945c4";
-   var long_url = "https://moolist.github.io/index.html?list=" + shoppinglist;
-  try{
-  $.getJSON(
-             "https://api-ssl.bitly.com/v3/shorten?callback=?",
-              {
-             "format": "json",
-              "apiKey": api_key,
-             "login": login,
-              "longUrl": long_url
-              },
-             function(response)
-             {
-                getshorturl = 1;
-                document.getElementById("sharelist").innerHTML = 'Share List:\n' + response.data.url;
-                copyToClipboard(response.data.url);
-                // copyToClipboard('sharelist');
-                 //alert("ShoppingList URL Copied");
-             });
-  } catch(err) {
-   //alert("Error : "+ err);
-    document.getElementById("sharelist").innerHTML = 'Share List:\n' + long_url;
-    //copyToClipboard("sharelist");
-    copyToClipboard(long_url);
-    //alert("ShoppingList URL Copied");
-}
-}
-//v4.1 share function
-function share()
-{
-   passlist();
-}
-//v4.1 prompt message to copy URL
-function copyToClipboard(text) {
-   window.prompt("Copy & Share List!", text);
-}
-
-
+window.alert ('Welcome shopping list App')
 
 
 
