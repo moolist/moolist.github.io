@@ -19,7 +19,7 @@ function passlist()
    var getshorturl=0;
    var login = "o_3iokgmm945";
    var api_key = "R_f2f3c9387a374e3fc6bf4b1ec2c945c4";
-   var long_url = "https://rvclist.github.io/index.html?list="+ shoppinglist;
+   var long_url = "https://moolist.github.io/index.html?list=" + shoppinglist;
   try{
   $.getJSON(
              "https://api-ssl.bitly.com/v3/shorten?callback=?",
@@ -59,25 +59,6 @@ function copyToClipboard(text) {
 
 window.alert("Welcome to Shopping List App")
 
-function addShoppinglist(item) {
-  //v 3.0 declare variable for groc string
-  //push to shoppinglist
-  if (item != "")
-  {
-  shoppinglist.push(item);
-  //display shoppinglist
-  displayShoppinglists();
-//v3.1 display displayShoppingCart() 
-  displayShoppingCart(); 
-  clearFocus();
-  //v 4.0 save cookie
-  savecookie();
-  }else
-  {
-  alert("Please enter your item name");
-  clearFocus();
-  }
-}
 
 function clearFocus()
 {
