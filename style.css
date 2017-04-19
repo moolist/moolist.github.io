@@ -65,7 +65,8 @@ body {
 
 label {
      float:right;
-    padding-right: 15px;
+     padding-left: 0%;
+    
     text-indent: 5px;
     color:  #ffffe6;
 }
