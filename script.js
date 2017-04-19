@@ -87,6 +87,8 @@ function remove_unwanted(str) {
 
 
 
+
+
 //v 3.0 Create Objects for Shoppinglist
 var MyItems = {
   name:"",
@@ -222,9 +224,7 @@ function addtoshopcart(item, num) {
   displayShoppingCart() 
   //Clear
   clearFocus();
-  save cookie();
 }
-
 
 
 
