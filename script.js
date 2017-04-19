@@ -2,6 +2,7 @@
 //Javascript 
 //April 3, 2017
 //Assignment# 11
+window.alert ('Welcome')
 function get(name){
     var url = window.location.search;
     var num = url.search(name);
