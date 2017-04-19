@@ -186,7 +186,7 @@ TheList += TheRow;
 }
 if (arrayLength > 0)
 {
-  document.getElementById("MyCart").innerHTML = 'Shopping Cart <img src="https://cdn.pbrd.co/images/OC8rBdiTW.png" alt="W3Schools.com" style="width:30px;height:30px;">' + '<br><ul>' + TheList + '</ul>';
+  document.getElementById("MyCart").innerHTML = 'Shopping Cart <img src="https://cdn.pbrd.co/images/60KZlQAeX.png" alt="pastboard.co" style="width:30px;height:30px;">' + '<br><ul>' + TheList + '</ul>';
 }else{
   document.getElementById("MyCart").innerHTML = '';
 }
