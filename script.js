@@ -181,18 +181,10 @@ var btndelete =  ' <input class="button1" name="delete" type="button" value="Rem
 var btnupdate =  ' <input class="button" name="edit" type="button" value="Edit Item" onclick="changeShoppingCart(' + i + ')" />';
 var arrays = addtocart[i];
 arrays = "'"+arrays+"'";
-var btnaddlist =  '<label for="add"><input name="add" type="checkbox" id="add" value="Add to Shopping List" onchange="toggleCheckbox(this) onclick="addbacktoshoppinglist('+arrays+',' + i + ')" checked="checked"/> <img  id="test" src="https://cdn.pbrd.co/images/5ZOHrjSoj.png" alt=""/></label>';
+var btnaddlist =  '<label><input name="add" type="checkbox" id="adds" value="Add to Shopping List"  onclick="addbacktoshoppinglist('+arrays+',' + i + ')" checked="checked"/> </label>';
 TheRow =  "<li>" + addtocart[i] + btndelete + ' ' +  ' ' + btnaddlist + '<br></li>';
 TheList += TheRow;
 }
-
-     //adding checkbox
-$("#add").click( function(){
-    if( $(this).is(':checked') ){
-             $('#test').attr('src','https://cdn.pbrd.co/images/5ZKoFbF8f.png');
-        }
-});
-     
      
 //cart     
 if (arrayLength > 0)
