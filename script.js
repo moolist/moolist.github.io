@@ -146,25 +146,6 @@ var shoppinglist = [];
 
 //v 2.1 Update function addShoppinglist
 //v 3.0 Update function addShoppinglist by adding objects
-function addShoppinglist(item) {
-  //v 3.0 declare variable for groc string
-  //push to shoppinglist
-  if (item != "")
-  {
-  shoppinglist.push(item);
-  //display shoppinglist
-  displayShoppinglists();
-//v3.1 display displayShoppingCart() 
-  displayShoppingCart(); 
-  clearFocus();
-  //v 4.0 save cookie
-  savecookie();
-  }else
-  {
-  alert("Item Description is Required");
-  clearFocus();
-  }
-}
 
 //v 2.1 add function 'clearFocus'
 function clearFocus()
@@ -262,6 +243,7 @@ function addbacktoshoppinglist(item,num) {
 
 //v 3.1 Update function addShoppinglist by adding objects
 function addtoshopcart(item, num) {
+     document.getElementById("sharelist").innerHTML = ' ';
     deleteShoppinglists(num);
     addtocart.push(item);
   //display shoppinglist
@@ -272,11 +254,39 @@ function addtoshopcart(item, num) {
   clearFocus();
 }
 
+function addShoppinglist(item) {
+  //v 3.0 declare variable for groc string
+  //push to shoppinglist
+  if (item != "")
+  {
+  document.getElementById("sharelist").innerHTML = ' ';
+  shoppinglist.push(item);
+  //display shoppinglist
+  displayShoppinglists();
+//v3.1 display displayShoppingCart() 
+  displayShoppingCart(); 
+  clearFocus();
+  //v 4.0 save cookie
+  savecookie();
+  }else
+  {
+  alert("Item Description Required: Please enter now :)");
+  clearFocus();
+  }
+}
+
+function clearFocus()
+{
+  document.getElementById("item").value = "";
+ //  document.getElementById("cost").value = "";
+  document.getElementById("item").focus();
+}
 
 
 
 
 function displayShoppinglists() {
+    document.getElementById("MyList").innerHTML = '';
 var TheList = "";
 var arrayLength = shoppinglist.length;
 for (var i = 0; i < arrayLength; i++) {
@@ -291,10 +301,12 @@ TheList += TheRow;
 if (arrayLength > 0)
 {
   document.getElementById("MyList").innerHTML = '<ul>' + TheList + '</ul>';
+     document.getElementById("sharebutton").innerHTML = btnsharelist;
 
 }else
 {
   document.getElementById("MyList").innerHTML = '';
+     document.getElementById("sharebutton").innerHTML = '';
 
 }
 }
@@ -322,16 +334,19 @@ if (arrayLength > 0)
 
 //v3.1
 function deleteShoppinglists(position) {
+  document.getElementById("sharelist").innerHTML = ' ';
   shoppinglist.splice(position, 1);
   displayShoppinglists();
-  displayShoppingCart() 
+  displayShoppingCart();
+   //v 4.0 save cookie
+  savecookie();
 }
-
 //v3.1
 function deleteShoppingCart(position) {
+  document.getElementById("sharelist").innerHTML = ' ';
   addtocart.splice(position, 1);
   displayShoppinglists();
-  displayShoppingCart() 
+  displayShoppingCart();
 }
 
 
