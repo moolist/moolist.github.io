@@ -245,7 +245,7 @@ var btndelete =  ' <input name="delete" style="visibility:hidden" type="" value=
 var arrays = shoppinglist[i];
 arrays = "'"+arrays+"'";
 var btnaddcart =  '<label><input name="add" type="checkbox" id="adds" value="Add to Shopping Cart" onclick="addtoshopcart('+arrays+','+ i +')" style="visibility:hidden"  /><img  id="adds" src="https://cdn.pbrd.co/images/61bOViCHY.png" alt=""/></label>';
-var btnsharelist = '<input class="button" id="shares" name="shares" type="submit" value="Share Shopping List" onclick="share()" />';
+var btnsharelist = '<input class="button" id="shares" name="shares" type="submit" value="Share" onclick="share()" />';
 
  TheRow = '<li>' + shoppinglist[i] + btndelete + ' '  + btnaddcart + '</li>';
 TheList += TheRow;
