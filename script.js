@@ -304,12 +304,12 @@ TheList += TheRow;
 if (arrayLength > 0)
 {
   document.getElementById("MyList").innerHTML = '<ul>' + TheList + '</ul>';
-document.getElementById("sharebutton").innerHTML = btnsharelist;
+
 
 }else
 {
   document.getElementById("MyList").innerHTML = '';
-document.getElementById("sharebutton").innerHTML = '';
+
 
 }
 }
