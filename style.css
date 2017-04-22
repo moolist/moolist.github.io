@@ -1,7 +1,5 @@
 /* Styles go here */
-.hover12 figure {
-	background: #1abc9c;
-}
+
 .hover12 figure img {
 	opacity: 1;
 	-webkit-transition: .3s ease-in-out;
