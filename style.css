@@ -1,20 +1,5 @@
 /* Styles go here */
 
-.hover01 figure img {
-	-webkit-transform: scale(1);
-	transform: scale(1);
-	-webkit-transition: .2s ease-in-out;
-	transition: .2s ease-in-out;
-}
-.hover01 figure:hover img {
-	-webkit-transform: scale(1.0);
-	transform: scale(1.0);
-}
-
-
-
-
-
 
 
 
