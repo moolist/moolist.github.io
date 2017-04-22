@@ -275,6 +275,7 @@ function addbacktoshoppinglist(item,num) {
 
 //v 3.1 Update function addShoppinglist by adding objects
 function addtoshopcart(item, num) {
+    document.getElementById("sharelist").innerHTML = ' ';
     deleteShoppinglists(num);
     addtocart.push(item);
   //display shoppinglist
@@ -303,12 +304,12 @@ TheList += TheRow;
 if (arrayLength > 0)
 {
   document.getElementById("MyList").innerHTML = '<ul>' + TheList + '</ul>';
-
+document.getElementById("sharebutton").innerHTML = btnsharelist;
 
 }else
 {
   document.getElementById("MyList").innerHTML = '';
-
+document.getElementById("sharebutton").innerHTML = '';
 
 }
 }
