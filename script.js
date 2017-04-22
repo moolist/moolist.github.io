@@ -304,12 +304,12 @@ TheList += TheRow;
 if (arrayLength > 0)
 {
   document.getElementById("MyList").innerHTML = '<ul>' + TheList + '</ul>';
-
+document.getElementById("sharebutton").innerHTML = btnsharelist;
 
 }else
 {
   document.getElementById("MyList").innerHTML = '';
-
+document.getElementById("sharebutton").innerHTML = '';
 
 }
 }
@@ -337,7 +337,7 @@ if (arrayLength > 0)
 
 //v3.1
 function deleteShoppinglists(position) {
-
+document.getElementById("sharelist").innerHTML = ' ';
   shoppinglist.splice(position, 1);
   displayShoppinglists();
   displayShoppingCart();
@@ -346,7 +346,7 @@ function deleteShoppinglists(position) {
 }
 //v3.1
 function deleteShoppingCart(position) {
-
+document.getElementById("sharelist").innerHTML = ' ';
   addtocart.splice(position, 1);
   displayShoppinglists();
   displayShoppingCart();
