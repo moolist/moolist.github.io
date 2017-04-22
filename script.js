@@ -244,7 +244,7 @@ for (var i = 0; i < arrayLength; i++) {
 var btndelete =  ' <input name="delete" style="visibility:hidden" type="" value="" onclick="deleteShoppinglists(' + i + ')" />';
 var arrays = shoppinglist[i];
 arrays = "'"+arrays+"'";
-var btnaddcart =  '<label><input name="add" type="checkbox" id="adds" value="Add to Shopping Cart" onclick="addtoshopcart('+arrays+','+ i +')" style="visibility:hidden"  /><img  id="adds" src="https://cdn.pbrd.co/images/61bOViCHY.png" alt=""/></label>';
+var btnaddcart =  '<label><input name="add" type="checkbox" id="adds" value="Add to Shopping Cart" onclick="addtoshopcart('+arrays+','+ i +')" style="visibility:hidden"  /><figure><img  id="adds" src="https://cdn.pbrd.co/images/61bOViCHY.png" alt=""/></figure></label>';
 var btnsharelist = '<input class="button" id="shares" name="shares" type="submit" value="Share" onclick="share()" />';
 
  TheRow = '<li>' + shoppinglist[i] + btndelete + ' '  + btnaddcart + '</li>';
@@ -273,14 +273,14 @@ var btndelete =  ' <input name="delete" style="visibility:hidden" type="" value=
 var btnupdate =  ' <input class="button" name="edit" type="button" value="Edit Item" onclick="changeShoppingCart(' + i + ')" />';
 var arrays = addtocart[i];
 arrays = "'"+arrays+"'";
-var btnaddlist =  '<label><input name="add" type="checkbox" id="adds" value="Add to Shopping List" onclick="deleteShoppingCart(' + i + ')"  checked="checked" style="visibility:hidden"/><img  id="test" src="https://cdn.pbrd.co/images/61dedbPM3.png" alt=""/></label>';
+var btnaddlist =  '<label><input name="add" type="checkbox" id="adds" value="Add to Shopping List" onclick="deleteShoppingCart(' + i + ')"  checked="checked" style="visibility:hidden"/><figure><img  id="test" src="https://cdn.pbrd.co/images/61dedbPM3.png" alt=""/></figure></label>';
 var btnsharelist = '<input class="button" id="shares" name="shares" type="submit" value="Share " onclick="share()" />';
     TheRow =  "<li>" + addtocart[i] + btndelete + ' ' +  ' ' + btnaddlist + '<br></li>';
 TheList += TheRow;
 }
 if (arrayLength > 0)
 {
-  document.getElementById("MyCart").innerHTML = '<img src="https://cdn.pbrd.co/images/60KZlQAeX.png" alt="pastboard.co" style="width:30px;height:30px;">' + '<br><ul>' + TheList + '</ul>';
+  document.getElementById("MyCart").innerHTML = '<figure><img src="https://cdn.pbrd.co/images/60KZlQAeX.png" alt="pastboard.co" style="width:30px;height:30px;"></figure>' + '<br><ul>' + TheList + '</ul>';
 }else{
   document.getElementById("MyCart").innerHTML = '';
 }
