@@ -56,7 +56,7 @@ function copyToClipboard(text) {
 }
 
 window.onload = function() {
-alert('Welcome to Shopping List App');    populateshoppinglistonload();
+alert('Welcome to my Shopping List App');    populateshoppinglistonload();
     displayShoppinglists();
     clearFocus();
 };
