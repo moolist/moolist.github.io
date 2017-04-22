@@ -56,17 +56,12 @@ function copyToClipboard(text) {
 }
 
 window.onload = function() {
-    alert("Welcome to 'Shopping List' App!\n\nCreated by Rock Valley College\n**Javascript(Web233) Students**\n\nQuestions?\nemail Professor Chuck Konkol\nc.konkol@rockvalleycollege.edu\n\nRegister @ RockValleyCollege.edu");
-    populateshoppinglistonload();
+alert('Welcome to my Shopping List App');    populateshoppinglistonload();
     displayShoppinglists();
     clearFocus();
 };
 
-function about()
-{
-    alert("Welcome to 'Shopping List' App!\n\nCreated by Rock Valley College\n**Javascript(Web233) Students**\n\nQuestions?\nemail Professor Chuck Konkol\nc.konkol@rockvalleycollege.edu\n\nRegister @ RockValleyCollege.edu");
-    
-}
+
 //read cookie and return
 function readCookie(name) {
     var nameEQ = name + "=";
@@ -99,11 +94,11 @@ function remove_unwanted(str) {
 //v 4.0 save cookie
 function savecookie()
 {
-  delete_cookie('konkollist');
+  delete_cookie('moo');
    var date = new Date();
    //keeps for a year
     date.setTime(date.getTime() + Number(365) * 3600 * 1000);
-   document.cookie = 'konkollist' + "=" + escape(shoppinglist.join(',')) + "; path=/;expires = " + date.toGMTString();
+   document.cookie = 'moo' + "=" + escape(shoppinglist.join(',')) + "; path=/;expires = " + date.toGMTString();
 }
 
 
@@ -118,7 +113,7 @@ function populateshoppinglistonload()
   shoppinglist = [];
   addtocart = [];
   //load cookie into array
-  var y = readCookie('konkollist');
+  var y = readCookie('moo');
   //remove unwanted chars and format
   y = remove_unwanted(y); 
   //spit array by comma %2C
@@ -226,7 +221,7 @@ function addShoppinglist(item) {
   savecookie();
   }else
   {
-  alert("Item Description Required: Please enter now :)");
+  alert("Item Description Required");
   clearFocus();
   }
 }
