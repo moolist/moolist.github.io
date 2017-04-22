@@ -163,6 +163,7 @@ function addShoppinglist(item) {
   //push to shoppinglist
   if (item != "")
   {
+   document.getElementById("sharelist").innerHTML = ' ';
   shoppinglist.push(item);
   //display shoppinglist
   displayShoppinglists();
