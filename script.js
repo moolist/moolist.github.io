@@ -24,6 +24,7 @@ function passlist()
   $.getJSON(
              "https://api-ssl.bitly.com/v3/shorten?callback=?",
               {
+      
              "format": "json",
               "apiKey": api_key,
              "login": login,
