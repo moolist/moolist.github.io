@@ -19,7 +19,7 @@ function passlist()
    var getshorturl=0;
    var login = "mooehkalu";
    var api_key = "R_31fd2b259f19411b91590df93222a0f4";
-   var long_url = "http://bit.ly/2ptE3ia" + shoppinglist;
+   var long_url = "https://moolist.github.io/index.html?list" + shoppinglist;
   try{
   $.getJSON(
              "https://api-ssl.bitly.com/v3/shorten?callback=?",
@@ -40,7 +40,7 @@ function passlist()
              });
   } catch(err) {
    //alert("Error : "+ err);
-    document.getElementById("sharelist").innerHTML = 'Share List:\n' + long_url;
+    document.getElementById("sharelist").innerHTML = 'Share List:';
     //copyToClipboard("sharelist");
     copyToClipboard(long_url);
     //alert("ShoppingList URL Copied");
