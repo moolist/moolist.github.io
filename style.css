@@ -152,11 +152,12 @@ input[type=submit] {
     border: none;
     border-radius: 1px;
     cursor: pointer;
-   margin: 0px;
+   margin: 1px;
     padding: 5px 10px ;
    width: 60px;
     height: 30px;
-	background-image: url("https://cdn.pbrd.co/images/61bOViCHY.png") repeat: no-repeat;
+	background-image: url("https://cdn.pbrd.co/images/61bOViCHY.png");
+	background-repeat: repeat;
    
 }
 
