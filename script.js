@@ -33,7 +33,7 @@ function passlist()
              function(response)
              {
                 getshorturl = 1;
-                document.getElementById("sharelist").innerHTML = 'Share List:\n' + response.data.url;
+                document.getElementById("sharelist").innerHTML = '\n' + response.data.url;
                 copyToClipboard(response.data.url);
                 // copyToClipboard('sharelist');
                  //alert("ShoppingList URL Copied");
@@ -98,7 +98,7 @@ function savecookie()
   delete_cookie('moo');
    var date = new Date();
    //keeps for a year
-    date.setTime(date.getTime() + Number(365) * 3600 * 1000);
+    date.setTime(date.getTime() + Number(24) * 60 * 1000);
    document.cookie = 'moo' + "=" + escape(shoppinglist.join(',')) + "; path=/;expires = " + date.toGMTString();
 }
 
