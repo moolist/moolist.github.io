@@ -136,27 +136,29 @@ li a {
 
 input[type=text], select {
    
-    padding: 5px 5px;
+    border-radius: 1px ;
+    padding: 7px 7px;
     display: inline;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    border: none;
     box-sizing: border-box;
-     width: 160px;
+     width: 200px;
     height: 30px;
 }
 
 
 input[type=submit] {
-  font-size: 60%;
-    background-color: #4CAF50;
+  background-color: #4CAF50;
     color: white;
     border: none;
-    border-radius: 3px;
+    border-radius: 1px ;
     cursor: pointer;
-   margin: 15px;
-    padding: 5px 10px ;
-   width: 70px;
-    height: 28px;
+   margin: 0px;
+    padding: 10px 10px ;
+   width: 40px;
+    height: 30px;
+    position:absolute;
+    left:339px;
+    top:141px;   
     
    
 }
@@ -170,7 +172,7 @@ input[type=submit]:hover {
   text-shadow: 1px 1px 2px #427388; 
     filter: green(100%);
     transition: 0.2s;
-    
+    border-radius: 3px  ;
 }
 
 @-webkit-keyframes background {
