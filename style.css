@@ -156,7 +156,7 @@ input[type=submit] {
     padding: 5px 10px ;
    width: 60px;
     height: 30px;
-	background-image: url("https://cdn.pbrd.co/images/61bOViCHY.png") ;
+	background-image: url("https://cdn.pbrd.co/images/61bOViCHY.png") repeat: no-repeat;
    
 }
 
