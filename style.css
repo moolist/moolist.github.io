@@ -152,12 +152,12 @@ input[type=submit] {
     border: none;
     border-radius: 1px;
     cursor: pointer;
-   margin: 1px;
+   margin: 2px;
     padding: 5px 10px ;
    width: 60px;
     height: 30px;
 	background-image: url("https://cdn.pbrd.co/images/61bOViCHY.png");
-	background-repeat: repeat;
+	background-repeat: no-repeat;
    
 }
 
@@ -173,6 +173,7 @@ input[type=submit]:hover {
     transition: 0.2s;
  border-radius: 3px  ;
 	background-image: url("https://cdn.pbrd.co/images/61bOViCHY.png") ;
+	background-repeat: no-repeat;
 }
 
 @-webkit-keyframes background {
