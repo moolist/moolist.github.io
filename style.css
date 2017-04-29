@@ -1,4 +1,10 @@
 /* Styles go here */
+h4 { 
+	float: left;
+	font-family: Comic Sans MS, Calibri, serif; 
+	color: #fff;
+	padding:25px;}
+
 h2 {
 	float: left;
 	font-family: Comic Sans MS, Calibri, serif; 
