@@ -122,8 +122,7 @@ body {
 
 label {
      float:right;
-     padding-left: 0%;
-    
+    padding-left: 6cm;
     text-indent: 5px;
     color:  #ffffe6;
     cursor: pointer;
@@ -143,12 +142,11 @@ ul {
     padding:0px;
     clear:both;
      color:  #ffffe6;
+	 
     
 }
 li {
-    background:  #666600
-
-;
+    background:  #666600;
     margin:5px 0px;
     line-height:1.6;
     padding:10px;
@@ -253,7 +251,7 @@ div {
     border-radius: 5px;
     background-color: rgb(77, 77, 0);
     padding: 20px;
-	 padding-left: 10cm;
+	
    
 }
 
