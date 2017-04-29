@@ -1,4 +1,13 @@
 /* Styles go here */
+h2 {
+	 
+		font-family: HanziPen TC, Calibri, serif; ;
+  	font-style: italic, bold;
+	color: #595;
+  
+}
+
+
 
 button2 {
   background-image: url("https://cdn.pbrd.co/images/61bOViCHY.png" );
