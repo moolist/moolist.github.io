@@ -1,4 +1,8 @@
 /* Styles go here */
+h2 {
+	float: left;
+}
+
 h1 {
 	 
 		font-family: HanziPen TC, Calibri, serif; ;
