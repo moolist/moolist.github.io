@@ -36,7 +36,7 @@ function passlist()
    var getshorturl=0;
    var login = "mooehkalu";
    var api_key = "R_31fd2b259f19411b91590df93222a0f4";
-   var long_url = "https://moolist.github.io/index.html?list=" + shoppinglist;
+   var long_url = "http://bit.ly/2ptE3ia" + shoppinglist;
   try{
   $.getJSON(
              "https://api-ssl.bitly.com/v3/shorten?callback=?",
@@ -116,7 +116,7 @@ function savecookie()
   delete_cookie('moo');
    var date = new Date();
    //keeps for a year
-    date.setTime(date.getTime() + Number(24) * 60 * 1000);
+    date.setTime(date.getTime() + Number(24) * 60 * 60 * 1000);
    document.cookie = 'moo' + "=" + escape(shoppinglist.join(',')) + "; path=/;expires = " + date.toGMTString();
 }
 
@@ -263,7 +263,7 @@ for (var i = 0; i < arrayLength; i++) {
 var btndelete =  ' <input name="delete" style="visibility:hidden" type="" value="" onclick="deleteShoppinglists(' + i + ')" />';
 var arrays = shoppinglist[i];
 arrays = "'"+arrays+"'";
-var btnaddcart =  '<label><input name="add" type="checkbox" id="adds" value="Add to Shopping Cart" onclick="addtoshopcart('+arrays+','+ i +')" style="visibility:hidden"  /><img  id="adds" src="https://cdn.pbrd.co/images/61bOViCHY.png" alt=""/></label>';
+var btnaddcart =  '<label><input name="add" type="checkbox" id="adds" value="Add to Shopping Cart" onclick="addtoshopcart('+arrays+','+ i +')" style="visibility:hidden"  /><img  id="adds" src="https://cdn.pbrd.co/images/61bOViCHY.png" alt=""/><br></label>';
 var btnsharelist = '<input class="button" id="shares" name="shares" type="submit" value="Share" onclick="share()" />';
 
  TheRow = '<li>' + shoppinglist[i] + btndelete + ' '  + btnaddcart + '</li>';
