@@ -192,14 +192,6 @@ input[type=submit2] {
 
 
 input[type=submit] {
-  background:url(https://cdn.pbrd.co/images/oAymv0R.png);
-   background-repeat: no-repeat;
-  background-position: 50% 50%;
-  /* put the height and width of your image here */
-  
-  border: none;
-   
-
     background-color: #00cc00;
     color: white;
     border: none;
