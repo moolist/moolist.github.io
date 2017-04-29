@@ -6,7 +6,13 @@ h1 {
 	color: #262626;
   
 }
-
+#div_1{
+		border:solid 1px white;
+		background-color: red;
+		width: 80%;
+		height: 50%;
+		margin: 100px auto 0px auto;
+	}
 
 
 button2 {
