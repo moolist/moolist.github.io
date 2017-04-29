@@ -57,7 +57,7 @@ function passlist()
              });
   } catch(err) {
    //alert("Error : "+ err);
-    document.getElementById("sharelist").innerHTML = 'Share List:';
+    document.getElementById("sharelist").innerHTML = '';
     //copyToClipboard("sharelist");
     copyToClipboard(long_url);
     //alert("ShoppingList URL Copied");
