@@ -167,6 +167,7 @@ input[type=text], select {
     height: 30px;
 }
 
+/*add button*/
 input[type=submit2] {
   background:url(https://cdn.pbrd.co/images/oAymv0R.png);
    background-repeat: no-repeat;
@@ -188,6 +189,16 @@ input[type=submit2] {
     
    
 }
+/*hover for add button*/
+input[type=submit2]:hover {
+    background-color: #00e600;
+    border: 1px solid;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, .2);
+  outline-color: rgba(255, 255, 255, 0);
+  outline-offset: 15px;
+  text-shadow: 1px 1px 2px #427388; 
+}
+
 
 
 
