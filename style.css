@@ -1,17 +1,11 @@
 /* Styles go here */
-h4 { 
+div.paragraph { 
 	float: left;
 	font-family: Comic Sans MS, Calibri, serif; 
 	color: #fff;
-	padding:25px;}
+	padding:28px;}
 
-h2 {
-	float: left;
-	font-family: Comic Sans MS, Calibri, serif; 
-	font-style: bold;
-	color: #fff;
-	padding:20px;
-}
+
 
 p {color: #fff;
 	font-family: Comic Sans MS, Calibri, serif; 
