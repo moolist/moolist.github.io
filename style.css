@@ -1,6 +1,10 @@
 /* Styles go here */
 h2 {
 	float: left;
+	font-family: Comic Sans MS, Calibri, serif; 
+	font-style: bold;
+	color: #fff;
+	padding:20px;
 }
 
 h1 {
