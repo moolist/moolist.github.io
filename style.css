@@ -3,7 +3,7 @@ div.paragraph {
 	float: left;
 	font-family: Comic Sans MS, Calibri, serif; 
 	color: #fff;
-	background-color: none;
+	background-color: black;
 	padding:28px;
 }
 
