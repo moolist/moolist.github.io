@@ -167,6 +167,29 @@ input[type=text], select {
     height: 30px;
 }
 
+input[type=submit2] {
+  background:url(https://cdn.pbrd.co/images/oAymv0R.png);
+   background-repeat: no-repeat;
+  background-position: 50% 50%;
+  /* put the height and width of your image here */
+  
+  border: none;
+   
+
+    background-color: #00cc00;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+   margin: 1px;
+    padding: 5px 10px ;
+   width: 50px;
+    height: 30px;
+    
+   
+}
+
+
 
 input[type=submit] {
   background:url(https://cdn.pbrd.co/images/oAymv0R.png);
