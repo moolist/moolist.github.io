@@ -5,34 +5,6 @@
 
 
 
-Push.create("Hello world!", {
-  body: "It's a browser notification!",
-  icon: 'http://download.seaicons.com/icons/paomedia/small-n-flat/32/sign-check-icon.png',
-  timeout: 4000,
-  onClick: function() {
-    window.focus();
-    this.close();
-  }
-});
-
-$(document).ready(function() {
-  $(".js-button").click(function() {
-    Push.create("Hello world!", {
-      body: "It's a browser notification!",
-      icon: 'http://download.seaicons.com/icons/paomedia/small-n-flat/32/sign-check-icon.png',
-      timeout: 4000,
-      onClick: function() {
-        window.focus();
-        this.close();
-      }
-    });
-
-  });
-});
-
-
-
-
 
 
 
