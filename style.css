@@ -163,14 +163,16 @@ ul {
     
 }
 li {
-    background:    rgb(217,217,191);
+    background:   #666600;
+     opacity: 0.1;
+    filter: alpha(opacity=10);
     margin:5px 0px;
     line-height:1.6;
     padding:10px;
    
 }
 li:nth-child(odd) {
-    background: #666600 background: rgb(76, 175, 80);;
+    background: #666600 ;
 }
 li a {
     font-size:small;
