@@ -299,7 +299,7 @@ TheList += TheRow;
 }
 if (arrayLength > 0)
 {
-  document.getElementById("MyCart").innerHTML = '<figure><img src="https://cdn.pbrd.co/images/X8WJVtnL.png" alt="pastboard.co" style="width:30px;height:30px;"></figure>' + '<br><ul>' + TheList + '</ul>';
+  document.getElementById("MyCart").innerHTML = '<figure><img src="https://cdn.pbrd.co/images/Xcwu2usU.png" alt="pastboard.co" style="width:30px;height:30px;"></figure>' + '<br><ul>' + TheList + '</ul>';
 }else{
   document.getElementById("MyCart").innerHTML = '';
 }
