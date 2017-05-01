@@ -164,7 +164,8 @@ ul {
 }
 li {
     background:   #666600;
-    
+     opacity: 0.5;
+    filter: alpha(opacity=50);
     margin:5px 0px;
     line-height:1.6;
     padding:10px;
@@ -172,8 +173,7 @@ li {
 }
 li:nth-child(odd) {
     background: #666600 ;
-	 opacity: 0.3;
-    filter: alpha(opacity=30);
+	
 }
 li a {
     font-size:small;
