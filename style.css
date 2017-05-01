@@ -164,8 +164,8 @@ ul {
 }
 li {
     background:   #666600;
-     opacity: 0.65;
-    filter: alpha(opacity=65);
+     opacity: 0.6;
+    filter: alpha(opacity=60);
     margin:5px 0px;
     line-height:1.6;
     padding:10px;
