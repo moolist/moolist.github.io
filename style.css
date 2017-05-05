@@ -253,11 +253,11 @@ input[type=submit]:hover {
 
 
 @-webkit-keyframes background {
- 0% { background-color: #5ce7f9; }
-  25% { background-color: #3fe8ff; }
-  50% { background-color: #17dfed; }
-  75% { background-color:  #06d4e2; }  
-  100% { background-color: #00a4c9; }
+ 0% { background-color: #aafcff; }
+  25% { background-color: #70fbff; }
+  50% { background-color: #44faff; }
+  75% { background-color:  #1efaff; }  
+  100% { background-color: #00faff; }
 }
 
 @keyframes background{
