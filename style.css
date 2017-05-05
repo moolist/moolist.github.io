@@ -75,7 +75,7 @@ button span {
 
 
 body {
-    background-color: #66ccff;
+    background-color: #005560;
 }
 
 .button1 {
@@ -253,11 +253,11 @@ input[type=submit]:hover {
 
 
 @-webkit-keyframes background {
-  0% { background-color: #59fff9; }
-  25% { background-color: #59ffc7; }
-  50% { background-color: #59ffae; }
-  75% { background-color: #59ff88; }  
-  100% { background-color: #0ef750; }
+ 0% { background-color: #5ce7f9; }
+  25% { background-color: #3fe8ff; }
+  50% { background-color: #17dfed; }
+  75% { background-color:  #06d4e2; }  
+  100% { background-color: #00a4c9; }
 }
 
 @keyframes background{
