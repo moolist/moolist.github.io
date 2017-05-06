@@ -125,7 +125,7 @@ body {
 
 
 #wrapper {
-    width:420px;
+    width:430px;
     margin:20px auto;
     float:right;
     padding:20px;
@@ -169,7 +169,7 @@ li {
     margin:5px 0px;
     line-height:1.6;
     padding:10px;
-   width:350px;
+   width:360px;
 }
 li:nth-child(odd) {
     background: #0395a8 ;
