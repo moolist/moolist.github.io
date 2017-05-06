@@ -72,11 +72,11 @@ button span {
 
 
 
-
-
 body {
-    background-color: #017589;
+    background-color: #004d80;
 }
+
+
 
 .button1 {
   background: #d93434;
@@ -125,7 +125,7 @@ body {
 
 
 #wrapper {
-    width:430px;
+    width:450px;
     margin:20px auto;
     float:right;
     padding:20px;
@@ -169,7 +169,7 @@ li {
     margin:5px 0px;
     line-height:1.6;
     padding:10px;
-   width:360px;
+   width:370px;
 }
 li:nth-child(odd) {
     background: #0395a8 ;
